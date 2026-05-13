@@ -13,7 +13,7 @@ resource "aws_instance" "jenkins" {
   tags = merge(
     local.common_tags,
     {
-        Name = "${var.project}-${var.environment}-jenkins"
+        Name = "jenkins"
     }
   )
 }
@@ -33,7 +33,7 @@ resource "aws_instance" "jenkins_agent" {
   tags = merge(
     local.common_tags,
     {
-        Name = "${var.project}-${var.environment}-jenkins-agent"
+        Name = "jenkins-agent"
     }
   )
 }
@@ -81,7 +81,7 @@ resource "aws_security_group" "main" {
   tags = merge(
     local.common_tags,
     {
-        Name = "${var.project}-${var.environment}-jenkins"
+        Name = "jenkins"
     }
   )
 }
