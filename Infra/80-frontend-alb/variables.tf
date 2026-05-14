@@ -7,9 +7,9 @@ variable "environment" {
 }
 
 variable "zone_id" {
-    default = "Z0948150OFPSYTNVYZOY"
+    default = "Z05479302GBMIMY4I5ABI"
 }
 
 variable "domain_name" {
-    default = "daws86s.fun"
+    default = "kriiishmatic.fun"
 }
